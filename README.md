@@ -1,69 +1,85 @@
-# C# Learning Journey
+# C# Learning Journey 🚀
 
-This repository contains my journey learning C# programming through practice exercises and challenges. It's organized by concepts and includes solutions to various programming activities.
+This repository documents my journey learning C# programming through hands-on examples and challenges. It's structured to provide a clear learning path through fundamental C# concepts.
 
-## Repository Structure
+## 📁 Project Structure
 
 ```
-CSharpLearning/
-├── src/                  # Source code folder
-│   ├── SectionA/         # Variable Scope examples
-│   ├── SectionB/         # Data Types examples
-│   ├── SectionC/         # Operators examples
-│   ├── Challenges/       # Challenge solutions
-│   └── Program.cs        # Main program entry point
-├── docs/                 # Documentation
-└── exercises/            # Original exercise instructions
+CSharpLearning-Journey/
+├── src/
+│   ├── CSharpLearning/    # Main program
+│   │   ├── CSharpLearning.csproj
+│   │   └── Program.cs
+│   ├── SectionA/          # Variable Scope examples
+│   │   ├── SectionA.csproj
+│   │   └── Program.cs
+│   ├── SectionB/          # Data Types examples
+│   │   ├── SectionB.csproj
+│   │   └── Program.cs
+│   ├── SectionC/          # Operators examples
+│   │   ├── SectionC.csproj
+│   │   └── Program.cs
+│   └── Challenges/        # Programming challenges
+│       ├── Challenges.csproj
+│       └── Program.cs
+├── docs/                  # Section documentation
+│   ├── SectionA.md
+│   ├── SectionB.md
+│   └── SectionC.md
+└── README.md
 ```
 
-## Concepts Covered
+## 🎯 Learning Sections
 
-### Section A: Variable Scope
-- Local vs Global Variables
-- Formal Parameters
-- Method Scope
+### [Section A: Variable Scope](docs/SectionA.md)
+- Understanding local and global variables
+- Method parameters and scope
+- Block-level scope
+- Variable shadowing
 
-### Section B: Data Types
-- Primitive Data Types
-- Type Conversion
-- Common Error Fixing
+### [Section B: Data Types](docs/SectionB.md)
+- Value types vs Reference types
+- Type conversion and casting
+- Common data type errors
+- Working with different numeric types
 
-### Section C: Operators
-- Arithmetic Operators
-- Relational Operators
-- Logical Operators
-- Increment/Decrement Operators
-- Bitwise Operators
-- Bitwise Assignment Operators
+### [Section C: Operators](docs/SectionC.md)
+- Arithmetic operators
+- Relational operators
+- Logical operators
+- Increment/Decrement operators
+- Bitwise operators
+- Assignment operators
 
-### Challenges
-- Calculator Program
+### [Challenges](docs/Challenges.md)
+- Calculator Program implementation
+- Additional programming exercises
 
-## How to Run the Program
+## 🚀 Getting Started
 
 ### Prerequisites
-- .NET SDK (version 6.0 or higher)
-- Visual Studio, Visual Studio Code, or any C# IDE
+- .NET SDK 6.0 or later
+- Visual Studio Code or any C# IDE
 
-### Running the Solution
-1. Clone the repository
+### Running the Program
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/NickiMash17/CSharp-Learning-Journey.git
-cd CSharp-Learning-Journey
+git clone https://github.com/NickiMash17/CSharpLearning-Journey.git
+cd CSharpLearning-Journey
 ```
 
-2. Build the solution
+2. Build the solution:
 ```bash
 dotnet build
 ```
 
-3. Run the main program
+3. Run the main program:
 ```bash
-dotnet run
+dotnet run --project src/CSharpLearning/CSharpLearning.csproj
 ```
 
 ### Running Individual Sections
-You can run individual sections directly:
 ```bash
 dotnet run --project src/SectionA/SectionA.csproj
 dotnet run --project src/SectionB/SectionB.csproj
@@ -71,28 +87,23 @@ dotnet run --project src/SectionC/SectionC.csproj
 dotnet run --project src/Challenges/Challenges.csproj
 ```
 
-## Learning Resources
+## 📚 Documentation
 
-Here are some resources I found useful during my learning journey:
+Each section has detailed documentation in the `docs` folder:
+- [Variable Scope Documentation](docs/SectionA.md)
+- [Data Types Documentation](docs/SectionB.md)
+- [Operators Documentation](docs/SectionC.md)
+- [Challenges Documentation](docs/Challenges.md)
 
-- [Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [C# Corner](https://www.c-sharpcorner.com/)
-- [W3Schools C# Tutorial](https://www.w3schools.com/cs/)
-- [GeeksforGeeks C# Programming](https://www.geeksforgeeks.org/csharp-programming-language/)
-
-## Next Steps in My Learning Journey
-
-After completing these exercises, I plan to explore:
-- Object-Oriented Programming in C#
+## 🌟 Next Steps
+- Object-Oriented Programming
 - Collections and LINQ
-- File I/O Operations
-- Asynchronous Programming
-- .NET Web Development
+- File Operations
+- Async Programming
+- Web Development with ASP.NET
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to star this repository if you find it useful!
+⭐ Star this repository if you find it helpful!

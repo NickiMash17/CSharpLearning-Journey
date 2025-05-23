@@ -24,7 +24,7 @@ namespace CSharpLearning
                 Console.WriteLine("0. Exit Program");
                 Console.Write("\nEnter your choice (0-5): ");
                 
-                string choice = Console.ReadLine();
+                string choice = Console.ReadLine() ?? string.Empty;
                 
                 switch (choice)
                 {

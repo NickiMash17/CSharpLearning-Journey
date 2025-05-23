@@ -52,7 +52,8 @@ graph LR
 - 🔒 Block-level Scope Rules
 - ⚡ Memory Management Basics
 
-**What you'll build:** Scope Analyzer Tool
+**What you'll build:** Scope Analyzer Tool  
+📖 **[Read Documentation](docs/SectionA-Variables.md)**
 
 </td>
 <td width="50%">
@@ -65,7 +66,8 @@ graph LR
 - 🔄 Type Conversion Strategies
 - 🎨 Custom Type Creation
 
-**What you'll build:** Type Converter Utility
+**What you'll build:** Type Converter Utility  
+📖 **[Read Documentation](docs/SectionB-DataTypes.md)**
 
 </td>
 </tr>
@@ -80,7 +82,8 @@ graph LR
 - 🔧 Bitwise Operations  
 - 🌟 Null-coalescing & More
 
-**What you'll build:** Expression Evaluator
+**What you'll build:** Expression Evaluator  
+📖 **[Read Documentation](docs/SectionC-Operators.md)**
 
 </td>
 <td width="50%">
@@ -93,7 +96,8 @@ graph LR
 - ✅ Input Validation Loops
 - 🧮 Algorithm Implementation
 
-**What you'll build:** Pattern Generator App
+**What you'll build:** Pattern Generator App  
+📖 **[Read Documentation](docs/SectionD-Loops.md)**
 
 </td>
 </tr>
@@ -213,6 +217,14 @@ public class LearningApproach
 }
 ```
 
+### 📚 Quick Access to Documentation
+- 📖 [Section A: Variable Scope](docs/SectionA-Variables.md)
+- 📖 [Section B: Data Types](docs/SectionB-DataTypes.md)  
+- 📖 [Section C: Operators](docs/SectionC-Operators.md)
+- 📖 [Section D: Loops](docs/SectionD-Loops.md)
+- 🏆 [Challenges Guide](docs/Challenges.md)
+- 🎯 [Getting Started Guide](docs/GettingStarted.md)
+
 ## 🤝 Contributing to the Journey
 
 We welcome fellow travelers! Here's how to join:
@@ -272,9 +284,9 @@ MIT © [Nicolette Mashaba]
 
 ### 🙏 Acknowledgments
 
-- Built with ❤️ for the C# community
-- Inspired by modern interactive learning platforms
-- Designed for developers, by developers
+- Created with ❤️ by **Nicolette Mashaba**
+- Built for the C# learning community
+- Inspired by interactive coding education
 
 ---
 

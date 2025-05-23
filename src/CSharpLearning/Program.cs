@@ -19,9 +19,10 @@ namespace CSharpLearning
                 Console.WriteLine("1. Section A: Variable Scope");
                 Console.WriteLine("2. Section B: Data Types");
                 Console.WriteLine("3. Section C: Operators");
-                Console.WriteLine("4. Challenge: Calculator Program");
+                Console.WriteLine("4. Section D: Loops");
+                Console.WriteLine("5. Challenge: Calculator Program");
                 Console.WriteLine("0. Exit Program");
-                Console.Write("\nEnter your choice (0-4): ");
+                Console.Write("\nEnter your choice (0-5): ");
                 
                 string choice = Console.ReadLine();
                 
@@ -37,6 +38,9 @@ namespace CSharpLearning
                         RunProgram("SectionC");
                         break;
                     case "4":
+                        RunProgram("SectionD");
+                        break;
+                    case "5":
                         RunProgram("Challenges");
                         break;
                     case "0":

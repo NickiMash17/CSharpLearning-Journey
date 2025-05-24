@@ -218,10 +218,10 @@ public class LearningApproach
 ```
 
 ### 📚 Quick Access to Documentation
-- 📖 [Section A: Variable Scope](docs/SectionA-Variables.md)
-- 📖 [Section B: Data Types](docs/SectionB-DataTypes.md)  
-- 📖 [Section C: Operators](docs/SectionC-Operators.md)
-- 📖 [Section D: Loops](docs/SectionD-Loops.md)
+- 📖 [Section A: Variable Scope](docs/SectionA.md)
+- 📖 [Section B: Data Types](docs/SectionB.md)  
+- 📖 [Section C: Operators](docs/SectionC.md)
+- 📖 [Section D: Loops](docs/SectionD.md)
 - 🏆 [Challenges Guide](docs/Challenges.md)
 - 🎯 [Getting Started Guide](docs/GettingStarted.md)
 

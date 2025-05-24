@@ -53,7 +53,7 @@ graph LR
 - ⚡ Memory Management Basics
 
 **What you'll build:** Scope Analyzer Tool  
-📖 **[Read Documentation](docs/SectionA-Variables.md)**
+📖 **[Read Documentation](docs/SectionA.md)**
 
 </td>
 <td width="50%">
@@ -67,7 +67,7 @@ graph LR
 - 🎨 Custom Type Creation
 
 **What you'll build:** Type Converter Utility  
-📖 **[Read Documentation](docs/SectionB-DataTypes.md)**
+📖 **[Read Documentation](docs/SectionB.md)**
 
 </td>
 </tr>
@@ -83,7 +83,7 @@ graph LR
 - 🌟 Null-coalescing & More
 
 **What you'll build:** Expression Evaluator  
-📖 **[Read Documentation](docs/SectionC-Operators.md)**
+📖 **[Read Documentation](docs/SectionC.md)**
 
 </td>
 <td width="50%">
@@ -97,7 +97,7 @@ graph LR
 - 🧮 Algorithm Implementation
 
 **What you'll build:** Pattern Generator App  
-📖 **[Read Documentation](docs/SectionD-Loops.md)**
+📖 **[Read Documentation](docs/SectionD.md)**
 
 </td>
 </tr>

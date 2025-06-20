@@ -305,3 +305,27 @@ Console.WriteLine("May your code compile and your bugs be few! 🐛✨");
 [![Built with ❤️](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)](https://github.com/NickiMash17)
 
 </div>
+
+## Section D - Advanced C# Concepts
+
+### Projects
+
+#### Banking System Demo
+A comprehensive banking application demonstrating advanced C# concepts:
+- 🏦 Console-based banking system with intuitive UI
+- 💰 Account balance management with transaction validation
+- 🔒 Secure input handling and error management
+- 🎨 Enhanced user experience with color-coded interface
+
+**Key Learning Points:**
+- Object-oriented programming principles
+- Exception handling and input validation
+- Console UI/UX design patterns
+- String formatting and interpolation
+- Control structures implementation
+
+**Try it out:**
+```bash
+cd src/SectionD/BankingSystem
+dotnet run
+```

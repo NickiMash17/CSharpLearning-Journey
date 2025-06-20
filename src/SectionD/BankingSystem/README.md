@@ -17,6 +17,14 @@ Part of the C# Learning Journey - Section D
 - String formatting and interpolation
 - Control structures (loops, conditionals)
 
+## Implementation Details
+- Uses constant fields for initial balance
+- Implements proper encapsulation
+- Validates all user inputs
+- Handles decimal calculations safely
+- Provides clear user feedback
+- Implements clean exit functionality
+
 ## Usage
 ```bash
 dotnet run
@@ -24,3 +32,6 @@ dotnet run
 
 ## Author
 Nicolette Mashaba
+
+## Last Updated
+June 20, 2025

@@ -23,7 +23,7 @@ namespace SectionC
                 Console.WriteLine("0. Exit");
                 Console.Write("\nEnter your choice (0-6): ");
 
-                string choice = Console.ReadLine() ?? "";
+                string choice = Console.ReadLine() ?? string.Empty;
                 Console.WriteLine();
 
                 switch (choice)

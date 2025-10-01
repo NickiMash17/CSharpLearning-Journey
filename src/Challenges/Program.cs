@@ -5,6 +5,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        /*
         // Exercise 1: Student Class
         Console.WriteLine("--- Student Class ---");
         Student student1 = new Student { ID = 1, Major = "Computer Science", GPA = 3.8 };
@@ -28,5 +29,30 @@ public class Program
         Console.WriteLine("\nAttempting to set length to a negative value...");
         rectangle.Length = -5;
         Console.WriteLine($"Rectangle Length is now: {rectangle.Length}");
+
+        Console.WriteLine();
+        */
+        
+        // Exercise 3: User Account Class (Interactive Version)
+        Console.WriteLine("--- User Account Class ---");
+        UserAccount user = new UserAccount("Nicolette", "Password123");
+
+        // --- Interactive Login with Retry ---
+        bool isLoggedIn = false;
+        while (!isLoggedIn)
+        {
+            Console.WriteLine("\nPlease enter the password to log in:");
+            string? inputPassword = Console.ReadLine();
+
+            // The Login method will return true or false
+            isLoggedIn = user.Login(inputPassword ?? "");
+
+            if (!isLoggedIn)
+            {
+                Console.WriteLine("Login failed. Please check your password and try again.");
+            }
+        }
+
+        Console.WriteLine("Welcome, Nicolette!");
     }
 }

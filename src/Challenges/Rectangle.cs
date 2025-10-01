@@ -1,38 +1,57 @@
-public class Rectangle
+using System;
+
+class Rectangle
 {
-    private double _length;
+    private double length;  // Encapsulation with private fields
+    private double width;
+
+    // Properties with validation
     public double Length
     {
-        get { return _length; }
+        get { return length; }
         set
         {
             if (value > 0)
-            {
-                _length = value;
-            }
+                length = value;
+            else
+                throw new ArgumentException("Length must be positive");
         }
     }
 
-    private double _width;
     public double Width
     {
-        get { return _width; }
+        get { return width; }
         set
         {
             if (value > 0)
-            {
-                _width = value;
-            }
+                width = value;
+            else
+                throw new ArgumentException("Width must be positive");
         }
     }
 
+    // Methods
     public double GetArea()
     {
-        return Length * Width;
+        return length * width;
     }
 
     public double GetPerimeter()
     {
-        return 2 * (Length + Width);
+        return 2 * (length + width);
+    }
+}
+
+class Program2
+{
+    static void Main()
+    {
+        Rectangle rect = new Rectangle();
+        rect.Length = 5;
+        rect.Width = 3;
+
+        Console.WriteLine($"Rectangle Length: {rect.Length}, Width: {rect.Width}");
+        Console.WriteLine($"Area: {rect.GetArea()}");
+        Console.WriteLine($"Perimeter: {rect.GetPerimeter()}");
     }
 }

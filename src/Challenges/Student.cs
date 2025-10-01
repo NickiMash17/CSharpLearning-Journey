@@ -1,5 +1,8 @@
+using System;
+
 public class Student
 {
+    // Properties
     public int ID { get; set; }
     public string Major { get; set; } = string.Empty;
     public double GPA { get; set; }

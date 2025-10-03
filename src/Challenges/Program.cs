@@ -1,7 +1,9 @@
-﻿// src/Challenges/Calculator.cs
+﻿// src/Challenges/Program.cs
 using System;
 
-public class Program
+namespace Challenges
+{
+    public class Program
 {
     public static void Main(string[] args)
     {
@@ -31,7 +33,6 @@ public class Program
         Console.WriteLine($"Rectangle Length is now: {rectangle.Length}");
 
         Console.WriteLine();
-        */
         
         // Exercise 3: User Account Class (Interactive Version)
         Console.WriteLine("--- User Account Class ---");
@@ -54,5 +55,79 @@ public class Program
         }
 
         Console.WriteLine("Welcome, Nicolette!");
+        */
+
+        // Exercise 1: Circle Class
+        Console.WriteLine("--- Circle Class ---");
+        Circle circle = new Circle();
+        circle.Radius = 5;
+        Console.WriteLine($"Circle (Radius: {circle.Radius})");
+        Console.WriteLine($"Area: {circle.GetArea():F2}");
+        Console.WriteLine($"Circumference: {circle.GetCircumference():F2}");
+
+        Console.WriteLine("\nAttempting to set radius to a negative value...");
+        circle.Radius = -7;
+        Console.WriteLine($"Circle Radius is now: {circle.Radius}");
+        Console.WriteLine();
+
+        // Exercise 2: Product Class
+        Console.WriteLine("--- Product Class ---");
+        Product product = new Product("Laptop", 1200.50m, 10);
+        Console.WriteLine($"Product: {product.Name}, Price: {product.Price:C}, Quantity: {product.Quantity}");
+        Console.WriteLine($"Total Value: {product.CalculateTotalValue():C}");
+
+        Console.WriteLine();
+
+        // Exercise 3: Smart Home System (OOP Demonstration)
+        Console.WriteLine("--- Smart Home System ---");
+
+        // Create different appliances
+        Light livingRoomLight = new Light("Philips", "Hue Bulb");
+        Speaker kitchenSpeaker = new Speaker("Sonos", "One");
+        Thermostat mainThermostat = new Thermostat("Nest", "Thermostat");
+
+        // Store appliances in a list for polymorphism demonstration
+        List<IControllable> appliances = new List<IControllable>
+        {
+            livingRoomLight,
+            kitchenSpeaker,
+            mainThermostat
+        };
+
+        // Display initial status
+        Console.WriteLine("Initial appliance statuses:");
+        foreach (var appliance in appliances)
+        {
+            Console.WriteLine(appliance.ToString());
+        }
+
+        Console.WriteLine("\nDemonstrating polymorphism - controlling all appliances:");
+
+        // Turn all appliances on
+        foreach (var appliance in appliances)
+        {
+            appliance.TurnOn();
+        }
+
+        Console.WriteLine("\nPerforming unique actions for each appliance:");
+
+        // Perform unique actions (polymorphism in action)
+        livingRoomLight.PerformAction(); // Adjust brightness
+        kitchenSpeaker.PerformAction();  // Play music
+        mainThermostat.PerformAction();  // Adjust temperature
+
+        Console.WriteLine("\nFinal appliance statuses:");
+        foreach (var appliance in appliances)
+        {
+            Console.WriteLine(appliance.ToString());
+        }
+
+        // Turn off all appliances
+        Console.WriteLine("\nTurning off all appliances:");
+        foreach (var appliance in appliances)
+        {
+            appliance.TurnOff();
+        }
     }
+}
 }

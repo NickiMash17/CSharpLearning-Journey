@@ -7,7 +7,7 @@
 ![C# Version](https://img.shields.io/badge/C%23-12.0-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![.NET Version](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-4%2F8%20Sections-orange?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-5%2F8%20Sections-orange?style=for-the-badge)
 
 </div>
 
@@ -32,8 +32,10 @@ graph LR
     B --> C[Operators]
     C --> D[Loops]
     D --> E[Challenges]
+    E --> F[Software Testing]
     style A fill:#f9f,stroke:#333,stroke-width:4px
     style E fill:#bbf,stroke:#333,stroke-width:4px
+    style F fill:#bfb,stroke:#333,stroke-width:4px
 ```
 
 ## 📚 Curriculum Deep Dive
@@ -98,6 +100,36 @@ graph LR
 
 **What you'll build:** Pattern Generator App  
 📖 **[Read Documentation](docs/SectionD.md)**
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🧪 **Section E: Software Testing**
+*Practical software testing skills*
+
+- 🧰 Unit Testing with xUnit
+- 🧪 Testing real-world classes
+- 🔍 Advanced testing techniques
+- 🚦 Test-Driven Development (TDD)
+
+**What you'll build:** Test Suites for C# Classes  
+📖 **[Read Documentation](docs/SectionE.md)**
+
+</td>
+<td width="50%">
+
+#### 🎯 **Challenges**
+*Apply your knowledge*
+
+- 🏗️ Object-Oriented Programming
+- 🔧 Problem-Solving Exercises
+- 🧪 Unit Testing Practice
+- 🚀 Real-World Scenarios
+
+**What you'll build:** Comprehensive Projects  
+📖 **[Read Documentation](docs/Challenges.md)**
 
 </td>
 </tr>

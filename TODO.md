@@ -1,9 +1,9 @@
 # TODO: SectionE - Software Testing Practicals
 
 ## Week 1: Introduction to Unit Testing
-- [ ] Create src/SectionE/ directory
-- [ ] Create src/SectionE/SectionE.csproj with xUnit package
-- [ ] Create src/SectionE/Program.cs with menu for 4 weeks
+- [x] Create src/SectionE/ directory
+- [x] Create src/SectionE/SectionE.csproj with xUnit package
+- [x] Create src/SectionE/Program.cs with menu for 4 weeks
 - [ ] Create tests/Week1/ directory and test project
 - [ ] Implement basic unit test examples in Week1
 - [ ] Update Program.cs to run Week1 tests
@@ -29,8 +29,16 @@
 - [ ] Update Program.cs for Week4
 
 ## Documentation and Integration
-- [ ] Create docs/SectionE.md with detailed content for each week
-- [ ] Update README.md to include SectionE in roadmap
-- [ ] Update progress badge from 4/8 to 5/8 sections
-- [ ] Add SectionE to the learning roadmap diagram
-- [ ] Test the entire section runs correctly
+- [x] Create docs/SectionE.md with detailed content for each week
+- [x] Update README.md to include SectionE in roadmap
+- [x] Update progress badge from 4/8 to 5/8 sections
+- [x] Add SectionE to the learning roadmap diagram
+- [x] Test the entire section runs correctly
+
+## Smart Home OOP Practical
+- [x] Implement IControllable interface
+- [x] Create SmartAppliance abstract base class
+- [x] Implement Light, Speaker, Thermostat classes
+- [x] Add Exercise 3 to Challenges/Program.cs
+- [x] Test the smart home system runs correctly
+- [x] Commit and push changes to repository

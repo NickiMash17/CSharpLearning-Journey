@@ -128,6 +128,136 @@ namespace Challenges
         {
             appliance.TurnOff();
         }
+
+        // --- OOP Exercises ---
+
+        // Exercise 1: Class Hierarchy
+        public class Vehicle
+        {
+            public string Make { get; set; }
+            public string Model { get; set; }
+
+            public virtual string Describe()
+            {
+                return $"This vehicle is a {Make} {Model}.";
+            }
+        }
+
+        public class Car : Vehicle, IDrivable
+        {
+            public int NumberOfDoors { get; set; }
+
+            public override string Describe()
+            {
+                return $"This car is a {Make} {Model} with {NumberOfDoors} doors.";
+            }
+
+            public void Drive()
+            {
+                Console.WriteLine($"Driving the car: {Make} {Model}");
+            }
+        }
+
+        public class Motorcycle : Vehicle, IDrivable
+        {
+            public bool HasSidecar { get; set; }
+
+            public override string Describe()
+            {
+                return $"This motorcycle is a {Make} {Model}" +
+                       (HasSidecar ? " with a sidecar." : " without a sidecar.");
+            }
+
+            public void Drive()
+            {
+                Console.WriteLine($"Riding the motorcycle: {Make} {Model}");
+            }
+        }
+
+        // Exercise 2: Interface Implementation
+        public interface IDrivable
+        {
+            void Drive();
+        }
+
+        // Exercise 3: Abstract Class
+        public abstract class Employee
+        {
+            public string Name { get; set; }
+            public abstract decimal CalculatePay();
+        }
+
+        public class HourlyEmployee : Employee
+        {
+            public decimal HourlyRate { get; set; }
+            public int HoursWorked { get; set; }
+
+            public override decimal CalculatePay()
+            {
+                return HourlyRate * HoursWorked;
+            }
+        }
+
+        public class SalariedEmployee : Employee
+        {
+            public decimal MonthlySalary { get; set; }
+
+            public override decimal CalculatePay()
+            {
+                return MonthlySalary;
+            }
+        }
+
+        // Exercise 4: ToString() Practice
+        public class Book
+        {
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public int Year { get; set; }
+
+            public override string ToString()
+            {
+                return $"{Title} by {Author} ({Year})";
+            }
+        }
+
+        // --- Demo code for the exercises ---
+        Console.WriteLine("\n--- OOP Exercises ---");
+
+        // Exercise 1 & 2 Demo
+        Car car = new Car { Make = "Toyota", Model = "Corolla", NumberOfDoors = 4 };
+        Motorcycle motorcycle = new Motorcycle { Make = "Harley", Model = "Street 750", HasSidecar = true };
+
+        Console.WriteLine(car.Describe());
+        Console.WriteLine(motorcycle.Describe());
+
+        List<IDrivable> drivables = new List<IDrivable> { car, motorcycle };
+        Console.WriteLine("\nDriving all vehicles:");
+        foreach (var d in drivables)
+        {
+            d.Drive();
+        }
+
+        // Exercise 3 Demo
+        HourlyEmployee hourly = new HourlyEmployee { Name = "Alice", HourlyRate = 20m, HoursWorked = 160 };
+        SalariedEmployee salaried = new SalariedEmployee { Name = "Bob", MonthlySalary = 5000m };
+
+        Console.WriteLine($"\n{hourly.Name}'s pay: {hourly.CalculatePay():C}");
+        Console.WriteLine($"{salaried.Name}'s pay: {salaried.CalculatePay():C}");
+
+        // Exercise 4 Demo
+        List<Book> books = new List<Book>
+        {
+            new Book { Title = "1984", Author = "George Orwell", Year = 1949 },
+            new Book { Title = "To Kill a Mockingbird", Author = "Harper Lee", Year = 1960 },
+            new Book { Title = "The Great Gatsby", Author = "F. Scott Fitzgerald", Year = 1925 }
+        };
+
+        Console.WriteLine("\nBooks:");
+        foreach (var book in books)
+        {
+            Console.WriteLine(book);
+        }
     }
 }
 }
